@@ -1,0 +1,89 @@
+header {
+  width: 100%;
+  background-color: var(--red);
+  /* background-color: var(--shadow-red); */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header {
+  list-style: none;
+}
+.header-usuario {
+  list-style: none;
+}
+
+h1 {
+  font-size: 3.5rem;
+  color: #ffffff;
+  color: var(--black);
+  padding: 0 20px;
+  -webkit-text-stroke: 3px var(--color-texto);
+  text-shadow: 3px 3px 0 #fffefe, -3px 3px 0 #8904d1, -3px -3px 0 #efebeb,
+    3px -3px 0 #000;
+}
+ul {
+  padding: var(--br-m);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--s);
+}
+ul > li > a {
+  color: var(--color-texto);
+  font-size: var(--l);
+  font-weight: bold;
+}
+ul > li > a::after {
+  content: '';
+  display: block;
+  height: 3px;
+  background-color: var(--color-texto);
+  transform: scale(0, 1);
+  transform-origin: center;
+  transition: transform 0.25s;
+}
+
+ul > li > a:hover::after {
+  transform: scale(1, 1);
+}
+
+#login-button {
+  font-size: 21px;
+  font-weight: bold;
+  border: none;
+  border-radius: var(--br-s);
+  padding: 5px 10px;
+
+  background-color: var(--enfasis);
+  color: var(--background-color);
+  -webkit-text-stroke: 0.2px var(--background-color);
+  box-shadow: 2.5px 2px 4px 0px var(--black);
+  cursor: pointer;
+}
+
+#login-button::after {
+  content: '';
+  display: block;
+  height: 3px;
+  background-color: var(--background-color);
+  transform: scale(0, 1);
+  transform-origin: center;
+  transition: transform 0.25s;
+}
+
+#login-button:hover::after {
+  transform: scale(1, 1);
+}
+
+.header-usuario > li {
+  margin-right: var(--br-m);
+  text-align: center;
+}
+
+@media screen and (max-width: 784px) {
+  header {
+    justify-content: center;
+  }
+}

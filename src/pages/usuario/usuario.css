@@ -1,0 +1,78 @@
+.perfil-container {
+  width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.img-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--l);
+}
+.imgPerfil-container {
+  width: 90px;
+  height: 90px;
+  margin: var(--l);
+}
+.imgPerfil-container > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.secondary-data {
+  background-color: var(--shadow-red);
+  padding: var(--xxl);
+  border-radius: var(--br-m);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: var(--l);
+}
+.title-edit {
+  font-size: var(--xl);
+  color: var(--background-color);
+}
+.secondary-data > * {
+  font-size: 20px;
+}
+
+.info-label {
+  color: var(--background-color);
+  -webkit-text-stroke: 0.5px var(--background-color);
+}
+.secondary-data > div > p {
+  -webkit-text-stroke: 0.5px var(--black);
+}
+#miFormulario {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--s);
+  background-color: var(--shadow-red);
+  border-radius: var(--br-m);
+}
+#miFormulario > input {
+  -webkit-text-stroke: 0.5px var(--black);
+  text-align: center;
+}
+#miFormulario > input:focus {
+  border-color: var(--enfasis);
+  box-shadow: 0 0 5px var(--enfasis);
+}
+.start {
+  padding: 5px;
+  -webkit-text-stroke: 0.5px var(--color-texto);
+}
+
+@media (max-width: 415px) {
+  .perfil-container {
+    justify-content: center;
+    align-items: flex-start;
+  }
+}

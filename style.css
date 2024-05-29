@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Marvel:ital,wght@0,400;0,700;1,400;1,700&family=Righteous&display=swap');
+:root {
+  --font-family: 'Marvel', sans-serif;
+  --line-height: 1.5;
+  /* colores */
+  --color-texto: #19191a;
+  --shadow: #422424bf;
+  --blue: #0161c8;
+  --not-enfasis: #796ea6;
+  --enfasis: #80007f;
+  --enfasis-2: #853785;
+  --shadow-red: #3a047c4d;
+  --red2: #e5101e;
+  --red: #489aac00;
+  --background-color: #e3e3e3;
+  --button-color: #231f1f;
+  --black: #000000;
+  /* --color-texto: #f2e5ff;
+  --shadow: #422424bf;
+  --blue: #0161c8;
+  --not-enfasis: #796ea6;
+  --enfasis: #80007f;
+  --enfasis-2: #fa00fa;
+  --shadow-red: #a21f258d;
+  --red2: #e5101e;
+  --red: #b00710;
+  --background-color: #010101;
+  --button-color: #231f1f;
+  --black: #000000; */
+
+  /* espacios*/
+  --s: 0.5rem;
+  --m: 1rem;
+  --l: 1.5rem;
+  --xl: 2rem;
+  --xxl: 3rem;
+  --br-s: 8px;
+  --br-m: 20px;
+  --br-l: 50%;
+}
+* {
+  font-family: var(--font-family);
+  line-height: var(--line-height);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+html {
+  background-color: var(--background-color);
+  color: var(--color-texto);
+}
+/* body {
+  min-height: 100svh;
+} */
+a {
+  text-decoration: none;
+}
